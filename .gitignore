@@ -61,3 +61,8 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+examples/androidapp
+examples/androidtests
+examples/peerconnection
+socket.IO-objc-master
+SocketRocket-ce02374210f6e158d44a90eaaaf43fa7373eff21
