@@ -19,9 +19,10 @@
 
 // TODO(tkchin): move these to a configuration object.
 static NSString * const kARDRoomServerHostUrl =
-    @"https://webrtc1.yinyueke.com:3004"; //@"https://webrtc-beta.yinyueke.com:3004"; //@"https://webrtc.yinyueke.com:3004";
+    @"https://webrtc.serverip.com:3004";
 static NSString * const kARDRoomServerJoinFormat =
-    @"https://webrtc1.yinyueke.com:3004/%@"; //@"https://webrtc-beta.yinyueke.com:3004/%@"; //@"https://webrtc.yinyueke.com:3004/%@";
+    @"https://webrtc.serverip.com:3004/%@";
+
 static NSString * const kARDRoomServerJoinFormatLoopback =
     @"http://192.168.1.105:8080/join/%@?debug=loopback";
 static NSString * const kARDRoomServerMessageFormat =

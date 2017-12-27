@@ -35,8 +35,7 @@
 
 #import "socketio/SocketIOPacket.h"
 
-static NSString * const kARDDefaultSTUNServerUrl = @"stun:webrtc.yinyueke.com:3478";
-    //@"stun:stun.l.google.com:19302";
+static NSString * const kARDDefaultSTUNServerUrl = @"stun:stun.l.google.com:19302";
 // TODO(tkchin): figure out a better username for CEOD statistics.
 static NSString * const kARDTurnRequestUrl =
     @"https://computeengineondemand.appspot.com"
@@ -952,7 +951,6 @@ didRemoveIceCandidates:(NSArray<RTCIceCandidate *> *)candidates {
     _socketIO.useSecure = _isSecure;
     _socketIO.returnAllDataFromAck = true;
     // connect to the socket.io server that is running locally at port 3000
-    //[_socketIO connectToHost:@"webrtc.yinyueke.com" onPort:8080];
     NSArray *aArray = [_host componentsSeparatedByString:@":"];
     [_socketIO connectToHost:aArray[0] onPort:[aArray[1] intValue]];
     
